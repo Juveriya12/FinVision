@@ -134,6 +134,7 @@ Authentication is implemented through API routes.
 ### Backend
 
 * Next.js API Routes
+* Mysql(database)
 
 ### Other Libraries
 
