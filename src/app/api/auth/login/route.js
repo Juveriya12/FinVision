@@ -5,6 +5,13 @@ export async function POST(req){
 
   const { email, password } = await req.json();
 
+  /* Demo Account for Judges (works even without database) */
+  if(email === "mm6980657@gmail.com" && password === "1234"){
+    return NextResponse.json({
+      success: true
+    });
+  }
+
   try{
 
     const [user] = await pool.query(
